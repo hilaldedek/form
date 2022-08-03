@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sözleşme</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<h1><strong>Sözleşme</strong></h1>
+	<div>
+		<fieldset>
+			<legend>Sözleşme Onay</legend>
+			<input type="radio" name="Onay veridi mi?" id="onay" value="Onaylandı.">
+			<label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum.</label><br><br>
+			<button>Formu Kaydet</button>
+			<button>Formu Temizle</button>
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Kişisel Bilgiler</legend><br>
+			<label for="ıd">Form Güvenlik ID</label>
+			<input type="text" name="güvenlik İD:" id="ıd"><br><br>
+			<label for="name">Ad</label>
+			<input type="text" name="Kişinin Adı:" id="name"><br><br>
+			<label for="lastname">Soyad</label>
+			<input type="text" name="Kişinim Soyadı:" id="lastname"><br><br>
+			<label for="age">Yaş</label>
+			<input type="text" name="Kişinin Soyadı:" id="age"><br><br>
+			<label for="email">E-mail</label>
+			<input type="email" name="Kişinin E-maili:" id="email"><br><br>
+			<label for="docs">Fotoğraf Ekle</label>
+			<input type="file" name="Eklenen Fotoğraf:" id="docs">
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Diğer Bilgiler</legend>
+			<h3 align="center"><strong>Buradaki alanlar mesleki deneyimini kapsar!</strong></h3>
+			<label for="date">Sektöre Giriş Tarihi</label>
+			<input type="date" name="Girilen tarih:" id="date"><br>
+			<p>Sektör Deneyimi</p>
+			<input type="radio" name="Kişinin sektör deneyimi:" id="experience" value="1-5 yıl">
+			<label for="experience">1-5 yıl</label><br>
+			<input type="radio" name="Kişinin sektör deneyimi:" id="experience1" value="6-10yıl">
+			<label for="experience1">6-10 yıl</label><br>
+			<input type="radio" name="Kişinin sektör deneyimi:" id="experience2" value="11-15 yıl">
+			<label for="experience2">11-15 yıl</label><br>
+			<input type="radio" name="Kişinin sektör deneyimi:" id="experience3" value="15+ yıl">
+			<label for="experience3">15+ yıl</label><br>
+		
+			<p>Programlama Dilleri</p>
+			<select name="Kişinin seçtiği programlama dilleri:" id="code">
+					<option value="C#">C#</option>
+					<option value="PHP">PHP</option>
+					<option value="Java">Java</option>
+					<option value="Phyton">Phyton</option>
+					<option value="JavaScript">JavaScript</option>
+			</select>
+		</fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Sözleşme Kopyası</legend>
+			<label for="comment" style="resize:none;"></label><br>
+			<textarea name="yorum budur:" id="yorum" >Lorem ipsum dolor sit amet.</textarea>
+        </fieldset>
+	</div>
+	<div>
+		<fieldset>
+			<legend>Mail Listesi</legend>
+			<label for="mail1">Mail listesine katlmak istiyorum.</label>
+			<input type="radio" name="Mail listesine katılmak istiyor mu?" id="mail1" value="evet"><br>
+			<label for="mail2">Mail listesine katılmak istemiyorum.</label>
+			<input type="radio" name="Mail listesine katılmak istiyor mu?" id="mail2" value="hayır">
+		</fieldset>
+	</div>
+
+	
+	
+</body>
+</html>
